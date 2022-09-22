@@ -1,0 +1,67 @@
+.button {
+  padding: 1.0rem;
+  cursor: pointer;
+}
+button {
+  border: none;
+  position: relative;
+  background-color: var(--button__default);
+  color: var(--button__default);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: 400;
+  padding: 1.0rem 3.0rem;
+  transition: 0.5s;
+}
+button:hover {
+  background-color: var(--contact__form__button);
+  letter-spacing: 0.25em;
+  color: var(--contact__form__button);
+  box-shadow: 0 0 3.5rem var(--contact__form__button);
+}
+button:before {
+  content: "";
+  position: absolute;
+  inset: .2rem;
+  background-color: var(--html__background__color);
+}
+button span {
+  position: relative;
+  z-index: 1;
+}
+button i {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+button i::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 80%;
+  width: 1.0rem;
+  height: .4rem;
+  background-color: var(--html__background__color);
+  transform: translateX(-50%) skew(325deg);
+  transition: 0.5s;
+}
+button:hover i::before {
+  width: 2.0rem;
+  left: 20%;
+}
+button i::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  width: 1.0rem;
+  height: .4rem;
+  background-color: var(--html__background__color);
+  transform: translateX(-50%) skew(325deg);
+  transition: 0.5s;
+}
+button:hover i::after {
+  width: 2.0rem;
+  left: 80%;
+}

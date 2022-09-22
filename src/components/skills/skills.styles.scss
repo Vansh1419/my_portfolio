@@ -1,0 +1,10 @@
+.content__skills {
+    display: grid;
+    padding: 10.0rem;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30.0rem;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-between;
+    align-content: space-between;
+}

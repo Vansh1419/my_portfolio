@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;1,300&family=Roboto:ital@0;1&display=swap');
+
+.light {
+  --color__text__main: black;
+  --html__background__color: #e4e0e0;
+  --border__color: black;
+  --contact__form__button:#2200ff ;
+  --button__default: black;
+  --tag__opacity: 0.1;
+  --tag__color: #2c2644;
+  --default__font2: 'Roboto Condensed', sans-serif;
+  --default__font1:'Roboto', sans-serif;
+}
+.dark {
+  --color__text__main: white;
+  --html__background__color: #191526;
+  --border__color: white;
+  --contact__form__button: #ff0000;
+  --button__default: white;
+  --tag__opacity: 0.5;
+  --tag__color: #2c2644;
+  --default__font2: 'Roboto Condensed', sans-serif;
+  --default__font1:'Roboto', sans-serif;
+}
+

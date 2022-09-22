@@ -1,0 +1,40 @@
+.tilt {
+  text-align: center;
+  width: fit-content;
+  transform-style: preserve-3d;
+  perspective: 100rem;
+  display: flex;
+  align-items: flex-end;
+  margin-top: 0;
+}
+
+.tilt:hover {
+  scale: 1.13;
+}
+.tilt:hover .card1__description__image1 {
+  /* box-shadow: 0 0 4.5rem var(--contact__form__button); */
+  box-shadow: 0 0 4.5rem var(--tag__color);
+}
+
+.card1__description__image1 {
+  height: 23.2rem;
+  width: 43.2rem;
+  box-shadow: 0 0.5rem 4rem rgba(0, 0, 0, 0.2);
+  transform: translateZ(4rem);
+  transition: 0.5s;
+}
+
+.card1__description__nameOfProject {
+  margin-bottom: 0;
+  position: relative;
+  font-size: 3rem;
+}
+
+.card1__description {
+  transform: translateZ(10rem);
+  color: var(--color__text__main);
+  width: 7rem;
+}
+.card1__description__info {
+  font-size: 2rem;
+}

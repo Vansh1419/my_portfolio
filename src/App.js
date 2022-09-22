@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import "./color.theme.css";
+import Sidetext from "./components/sideText/sidetext.component";
+import Skills from "./components/skills/skills.component";
+import Works from "./components/works/work.component";
+import React from "react";
+import Button from "./components/button/button.component";
+import { useRef, useState, useEffect } from "react";
 
+import Intro from "./introduction/introduction.component";
 function App() {
+  const [tagInfo, setTagInfo] = useState("");
+  const intersectionObservorHandler = (e) => {
+    setTagInfo(e);
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Sidetext props={tagInfo} />
+      <Intro handler={intersectionObservorHandler} />
+      <Skills handler={intersectionObservorHandler} />
+      <Works handler={intersectionObservorHandler} />
     </div>
   );
 }
-
 export default App;

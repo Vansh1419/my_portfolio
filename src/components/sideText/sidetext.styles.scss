@@ -1,0 +1,12 @@
+h3.background__tags {
+    position: fixed;
+    top: 50%;
+    left: 100%;
+    transform: translate(-100%, -50%);
+    margin: 0;
+    text-align: end;
+    color: var(--tag__color);
+    opacity: var(--tag__opacity);
+    font-size: 41rem;
+    padding: 1rem;
+}
